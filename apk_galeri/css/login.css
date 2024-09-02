@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300; /* Mengatur ketebalan font dasar */
+}
+
+.wrap-card {
+    padding: 60px 40px; 
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Background diubah menjadi warna putih */
+    border-radius: 12px; 
+    color: #333333;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
+    max-width: 400px; 
+    width: 100%;
+    text-align: center;
+    font-weight: 400; /* Font-weight standar untuk teks di dalam card */
+    border: 2px solid #000000; /* Border dengan warna biru untuk membuat garis tabel */
+}
+
+.wrap-card h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 500; /* Sedikit lebih tebal untuk heading */
+}
+
+.wrap-card .card-name {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-name label {
+    font-size: 1em;
+    margin-bottom: 8px; 
+    font-weight: 500; /* Label dengan font-weight sedang */
+}
+
+.card-name input {
+    height: 2.5em;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #333333; 
+    font-size: 1em;
+    transition: border-color 0.3s ease; 
+    font-weight: 400; /* Font input dengan ketebalan standar */
+}
+
+.card-name input:focus {
+    border-color: #000000; 
+    outline: none; 
+}
+
+.card-name button {
+    background-color: #007bff; /* Tombol dengan background biru */
+    height: 2.5em;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500; /* Font-weight tebal untuk tombol */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+}
+
+.card-name button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.wrap-card span {
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-weight: 300; /* Font-weight lebih ringan untuk teks tambahan */
+}
+
+.wrap-card span a {
+    color: #007bff; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400; /* Teks link dengan ketebalan standar */
+}
+
+.wrap-card span a:hover {
+    color: #0056b3;
+}

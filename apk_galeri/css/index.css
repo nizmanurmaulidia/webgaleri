@@ -1,0 +1,106 @@
+body {
+    font-family: 'Baumans', sans-serif;
+    background-color: #f8f9fa; /* Warna latar belakang tetap */
+    margin: 0;
+    padding: 0;
+}
+
+.judul {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.judul h1 {
+    font-size: 2.2em; /* Ukuran font sedikit lebih kecil */
+    color: #333;
+    margin: 0;
+    font-weight: 500; /* Berat font sedang */
+    line-height: 1.2; /* Jarak baris lebih rapat */
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; /* Menyembunyikan scroll bar di card-wrapper */
+}
+
+.card-scroll {
+    display: flex;
+    overflow-x: auto; /* Scroll horizontal aktif */
+    padding: 10px;
+    gap: 20px;
+    scroll-behavior: smooth; /* Efek scroll halus */
+    -webkit-overflow-scrolling: touch; /* Efek scroll halus pada perangkat sentuh */
+}
+
+.card-scroll::-webkit-scrollbar {
+    height: 0; /* Menyembunyikan scroll bar pada Webkit browser */
+}
+
+.card-scroll {
+    scrollbar-width: none; /* Menyembunyikan scroll bar pada Firefox */
+}
+
+.card {
+    background-color: #ffffff; /* Ubah latar belakang menjadi putih */
+    border: 1px solid #e0e0e0; /* Warna border abu-abu terang untuk elegan */
+    border-radius: 12px; /* Radius sudut lebih besar untuk kesan lebih lembut */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus */
+    width: 300px;
+    text-align: center;
+    padding: 20px; /* Padding lebih luas untuk ruang ekstra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    border-radius: 8px; /* Radius sudut gambar lebih besar */
+    max-width: 100%;
+    height: auto;
+}
+
+.card span {
+    display: block;
+    margin-top: 10px; /* Sedikit menambah jarak antara elemen */
+    color: #555; /* Warna teks abu-abu gelap untuk kontras lembut */
+    font-size: 0.9em; /* Ukuran font lebih kecil */
+    line-height: 1.5; /* Jarak baris yang lebih besar untuk keterbacaan */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+footer {
+    background-color: #ffffff; /* Ubah latar belakang footer menjadi putih */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #dee2e6; /* Warna border atas tetap */
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.2em; /* Ukuran font sedikit lebih besar */
+    font-weight: 400; /* Berat font sedang */
+}
+
+footer a {
+    color: #007BFF; /* Warna link biru */
+    text-decoration: none;
+    font-weight: 500; /* Berat font sedang */
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em; /* Ukuran font lebih kecil */
+    transition: color 0.3s ease; /* Efek transisi untuk perubahan warna */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Warna lebih gelap saat hover */
+}
